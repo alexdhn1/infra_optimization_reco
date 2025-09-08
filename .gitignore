@@ -1,0 +1,23 @@
+# Environnements
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Notebooks checkpoints
+.ipynb_checkpoints/
+
+# VSCode
+.vscode/
+
+# Mac / Windows
+.DS_Store
+Thumbs.db
+
+
+*.json
+/Test Optimisation infra (5) (1)/
+treshold.py
