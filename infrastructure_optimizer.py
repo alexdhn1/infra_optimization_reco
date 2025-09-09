@@ -209,7 +209,7 @@ class AnomalyDetectionNode:
 
 class RecommendationGeneratorNode:
     def __init__(self, llm=None):
-        self.llm = llm or ChatAnthropic(model="claude-3-sonnet-20240229", temperature=0.3)
+        self.llm = llm or ChatAnthropic(model="claude-3-5-haiku-20241022", temperature=0.3)
         self.recommendation_templates: Dict[str, Dict[str, Dict[str, Any]]] = {
             # (same expanded templates as précédemment)
             'cpu_usage': {

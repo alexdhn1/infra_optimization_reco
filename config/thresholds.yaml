@@ -1,0 +1,25 @@
+static:
+  cpu_usage:            { warning: 70,  critical: 85 }
+  memory_usage:         { warning: 75,  critical: 90 }
+  latency_ms:           { warning: 200, critical: 500 }
+  error_rate:           { warning: 0.01, critical: 0.05 }
+  thread_count:         { warning: 800, critical: 1200 }
+
+
+slos:
+  latency_ms:
+    objective_ms_p95: 200
+    short_window: 300    # 5 min
+    long_window: 3600    # 1 h
+    short_burn: 10
+    long_burn: 2
+  error_rate:
+    objective: 0.01
+    short_window: 300
+    long_window: 3600
+    short_burn: 5
+    long_burn: 2
+
+hysteresis:
+  consecutive_points: 3
+  lookback_points: 5
