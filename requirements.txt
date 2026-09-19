@@ -1,0 +1,7 @@
+langgraph>=0.2
+langchain>=0.3
+langchain-anthropic>=0.3
+pydantic>=2
+numpy>=1.26
+scikit-learn>=1.4
+pyyaml>=6
